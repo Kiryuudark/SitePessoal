@@ -17,35 +17,62 @@
 body {
     background-color: var(--body-background-color);
     color: var(--body-text-color);
+    height:100vh;
 }
 
 header {
-    display:absolute;
+    min-width: 490px;
+    display:flex;
     background-color: var(--menu-background-color);
     color: var(--menu-text-color);
+    justify-content: space-between;
+    align-items: center;
 }
 
-.menu-bar .menuOp {
-    display: inline-block;
-    padding: 0px;
-    height:100%;
-    background-color: red;
+.menu-bar{
+    display: inline;
+    height: 53px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-bar a {
+    padding: 13px 13px;
+    color:white;
+}
+
+.menu-bar a:hover {
+    background-color: white;
+    transition: all 0.4s ease;
+    color:black;
+    
 }
 
 .menu-bar a {
     text-decoration: none;
 }
 
-.menu-bar div:hover {
+header .pag-title{
+    padding-right: 15px;
+    user-select: none;
+    text-shadow: 2px 6px 8px  black;
+}
+
+footer {
+    position: absolute;
+    font-size: 12px;
+    bottom:1px;
     background-color: white;
-    transition: all 0.4s ease;
-
+    width: 100%;
+    text-align: center;
 }
 
-header {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    
+p {
+    text-align: justify;
+    padding: 0px 4px;
 }
 
+article h1 {
+    padding-left:10px;
+    padding-top: 15px;
+}
